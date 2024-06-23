@@ -1,0 +1,78 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 0;
+  height: 55px; 
+  z-index: 1000;
+  border-bottom: 1px solid #7a7676;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px; 
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  height: 47px;
+  width: auto; 
+  margin-left: 140px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.logo-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000; 
+  margin-right: 1030px;
+  
+}
+
+
+.upload-button {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #06161f;
+  padding: 11px 15px 10px ; 
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex; 
+  align-items: center; 
+  height: 30px;
+  margin-right: 30px; 
+  margin-top: 10px;
+}
+
+.upload-button .plus-symbol {
+  margin-right: 7px; 
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: middle; 
+}
+
+.upload-button:hover {
+  background-color: #e6e6e6;
+}
+
+.file-name-display{
+  margin-left: 600px;
+  font-size: 15px;
+  margin-top: -1px;
+  color:rgb(78, 204, 223);
+}
