@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+PDF Chatbot using Cohere LLM and React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a chatbot system that allows users to interact with a PDF document through natural language queries. It leverages the Cohere LLM (Large Language Model) to understand user questions and retrieve relevant content from the PDF files. The system utilizes React for the frontend, providing a seamless and responsive user interface, while the backend processes PDF documents to extract text and handle conversational responses.
 
-## Available Scripts
+The key functionality of this project includes:
 
-In the project directory, you can run:
+Uploading PDF files.
+Processing and indexing the text content of the PDFs.
+Allowing users to ask questions about the PDF content.
+Using Cohere LLM to generate meaningful responses based on the text data.
+A clear and interactive user interface built with React. 
 
-### `npm start`
+Setup 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites:
+Before setting up the project, ensure you have the following installed on your system:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Node.js (Version 14.x or higher)
+npm or yarn (For managing frontend dependencies)
+Python 3.x (For the backend environment)
+Cohere API key (Sign up at Cohere to get your API key for accessing the LLM)
 
-### `npm test`
+Setup Instructions:
+1.Clone the repository:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React.git
+cd PdfChatbot-Cohere-LLm-React
 
-### `npm run build`
+2.Install dependencies for the frontend (React):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.Add your Cohere API key:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a .env file in the backend directory and add your Cohere API key
+COHERE_API_KEY=your_cohere_api_key_here
 
-### `npm run eject`
+4.Run the backend server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+python app.py
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5.Run the frontend (React):
+npm start
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6.Access the application:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Open your browser and go to http://localhost:3000 to interact with the PDF chatbot.
 
-## Learn More
+How the Project Works:
+PDF Upload: Users can upload a PDF document through the interface. The PDF content is extracted and processed by the backend.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Querying: After uploading the PDF, users can ask natural language questions about the content. The chatbot interface allows seamless interaction.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Response Generation: The backend uses the Cohere LLM to process the user's query, search for relevant sections within the PDF content, and generate responses.
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Frontend: The frontend is built using React, making the interface dynamic and interactive. It handles file uploads, sends user queries to the backend, and displays the responses.
