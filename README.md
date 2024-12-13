@@ -45,8 +45,12 @@
 </head>
 <body>
   <h1>PDF Chatbot using Cohere LLM and React</h1>
-
-  <p>This project is a chatbot system that allows users to interact with a PDF document through natural language queries. It leverages the Cohere LLM (Large Language Model) to understand user questions and retrieve relevant content from the PDF files. The system utilizes React for the frontend, providing a seamless and responsive user interface, while the backend processes PDF documents to extract text and handle conversational responses.</p>
+  <p>
+    This project is a chatbot system that allows users to interact with a PDF document through natural language queries. 
+    It leverages the Cohere LLM (Large Language Model) to understand user questions and retrieve relevant content from the PDF files. 
+    The system utilizes React for the frontend, providing a seamless and responsive user interface, while the backend processes PDF documents 
+    to extract text and handle conversational responses.
+  </p>
 
   <h2>Key Features</h2>
   <ul>
@@ -56,7 +60,6 @@
     <li><strong>Cohere LLM:</strong> Generates meaningful responses based on the text data.</li>
     <li><strong>Interactive UI:</strong> A clear and dynamic interface built with React.</li>
   </ul>
-
   <hr>
 
   <h2>Setup</h2>
@@ -67,7 +70,7 @@
     <li><strong>Node.js</strong> (Version 14.x or higher)</li>
     <li><strong>npm</strong> or <strong>yarn</strong> (For managing frontend dependencies)</li>
     <li><strong>Python 3.x</strong> (For the backend environment)</li>
-    <li><strong>Cohere API Key</strong> (Sign up at <a href="https://cohere.ai">Cohere</a> to get your API key for accessing the LLM)</li>
+    <li><strong>Cohere API Key</strong> (Sign up at <a href="https://cohere.ai" target="_blank">Cohere</a> to get your API key for accessing the LLM)</li>
   </ul>
 
   <h3>Installation Steps</h3>
