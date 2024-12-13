@@ -12,17 +12,6 @@ This project is a **PDF Question-Answering System** that extracts text from a PD
 4. **AI-Powered Answers**: The backend processes the question using Cohere's language model and provides an answer.
 5. **Interactive UI**: A dynamic, user-friendly React frontend to interact with the system.
 
----
-
-## Screenshots
-
-### Upload PDF Screen
-![Upload Screen](https://raw.githubusercontent.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React-/main/screenshots/Screenshot%202024-12-13%20203827.png)
-
-### Question and Answer Screen
-![Q&A Screen](https://raw.githubusercontent.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React-/main/screenshots/qa_screen.png)
-
----
 
 ## Technologies Used
 
@@ -56,5 +45,89 @@ Follow these steps to set up the project on your local system:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/pdf-question-answering.git
+   https://github.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React-
    cd pdf-question-answering/backend
+   ```
+
+2. Create a virtual environment and activate it:
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows: env\Scripts\activate
+   ```
+
+3. Install the required Python packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Replace the placeholder Cohere API key in the `main.py` file:
+   ```python
+   co = cohere.Client(api_key='your-cohere-api-key')
+   ```
+
+5. Run the FastAPI server:
+   ```bash
+   uvicorn main:app --reload
+   ```
+
+### Frontend Setup
+
+1. Navigate to the `frontend` folder:
+   ```bash
+   cd ../frontend
+   ```
+
+2. Install the required npm packages:
+   ```bash
+   npm install
+   ```
+
+3. Start the React development server:
+   ```bash
+   npm start
+   ```
+
+4. Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## API Endpoints
+
+### Upload PDF
+- **Endpoint**: `/upload-pdf/`
+- **Method**: `POST`
+- **Description**: Accepts a PDF file, extracts its text, and stores it for future questions.
+
+### Answer Questions
+- **Endpoint**: `/answer-questions/`
+- **Method**: `POST`
+- **Description**: Accepts a question and returns an AI-generated answer based on the uploaded PDF's content.
+
+---
+
+## Folder Structure
+
+```
+root
+├── backend
+│   ├── main.py          # FastAPI backend implementation
+│   ├── requirements.txt # Backend dependencies
+├── frontend
+│   ├── src
+│   │   ├── App.js       # React main component
+│   │   ├── Header.js    # Header component
+│   │   ├── App.css      # Styles
+├── screenshots          # Folder for screenshots
+```
+
+---
+
+## Screenshots
+
+### Upload PDF Screen
+![Upload Screen](https://raw.githubusercontent.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React-/main/screenshots/Screenshot%202024-12-13%20203827.png)
+
+### Question and Answer Screen
+![Q&A Screen](https://raw.githubusercontent.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React-/main/screenshots/Screenshot%202024-12-13%20203909.png)
+
+---
