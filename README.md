@@ -17,7 +17,7 @@ This project is a **PDF Question-Answering System** that extracts text from a PD
 ## Screenshots
 
 ### Upload PDF Screen
-![Upload Screen](https://raw.githubusercontent.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React-/main/screenshots/upload_screen.png)
+![Upload Screen](https://raw.githubusercontent.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React-/main/screenshots/Screenshot%202024-12-13%20203827.png)
 
 ### Question and Answer Screen
 ![Q&A Screen](https://raw.githubusercontent.com/Adityapatwari193/PdfChatbot-Cohere-LLm-React-/main/screenshots/qa_screen.png)
